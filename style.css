@@ -1,0 +1,461 @@
+:root {
+  --primary-red-color: #e81c4f;
+  --primary-ash-color: #66757f;
+  --small-ash-color: #657786;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #e6ecf0;
+}
+
+header {
+  padding: 0px 35px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  background: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary-ash-color);
+}
+
+.navitem {
+  align-self: center;
+}
+
+.navitem > a {
+  font-size: 13px;
+  text-decoration: none;
+  padding: 15px 15px;
+  color: var(--primary-ash-color);
+  font-weight: bold;
+}
+
+.navitem > a:hover {
+  transition: all 0.15s ease-in-out;
+  color: var(--primary-red-color);
+  border-bottom: 2px solid var(--primary-red-color);
+}
+
+.navitem > a:focus {
+  transition: all 0.15s ease-in-out;
+  color: var(--primary-red-color);
+  border-bottom: 2px solid var(--primary-red-color);
+}
+
+.navitem > a > i {
+  padding-right: 5px;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.navsearch {
+  background-color: #f5f8fa;
+  border-radius: 21px;
+  border: 2px solid #e6ecf0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #14171a;
+  display: block;
+  font-size: 12px;
+  height: 32px;
+  line-height: 16px;
+  padding: 8px 32px 8px 12px;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+.navsearch:focus {
+  border: 2px solid var(--primary-red-color);
+}
+
+.navsearch-container {
+  display: inline-flex;
+}
+
+.navsearch-container img {
+  width: 50px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid #0000ff6e;
+}
+
+.navsearch-container input[type="button"] {
+  border-radius: 100px;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  color: white;
+  background: var(--primary-red-color);
+}
+
+.navsearch-container input[type="button"]:hover {
+  transition: all 0.2s ease-in-out;
+  background: #e63c67;
+}
+
+.main-container {
+  margin: 10px 30px;
+  display: grid;
+  grid-template-columns: 288px auto 288px;
+  grid-gap: 10px;
+}
+
+.main-item > div {
+  background: white;
+}
+
+/*card profile*/
+.card-profile-pic {
+  width: 72px;
+  height: 72px;
+  border-radius: 100%;
+  border: 2px solid white;
+  position: absolute;
+  top: -30px;
+}
+
+.profile-sec {
+  position: relative;
+}
+
+.profile-sec div {
+  position: relative;
+  top: 2px;
+  left: 85px;
+}
+
+.profile-sec div > a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 0px;
+}
+
+.profile-sec div > a:hover {
+  border-bottom: 1px solid black;
+}
+
+.profile-sec div > p {
+  line-height: 0;
+  color: var(--small-ash-color);
+  font-size: 14px;
+}
+
+/** Crad Profile pic end **/
+
+/** followers section start **/
+.followers-sec {
+  display: flex;
+  justify-content: space-between;
+}
+
+.followers-sec a {
+  text-decoration: none;
+  color: var(--small-ash-color);
+  font-weight: bold;
+}
+
+.followers-sec a:hover {
+  color: var(--primary-red-color);
+}
+
+.followers-sec a > p {
+  font-size: 12px;
+  line-height: 0.2rem;
+  color: var(--small-ash-color);
+  letter-spacing: 0.02em;
+}
+
+.followers-sec a > span {
+  display: block;
+  color: var(--primary-red-color);
+  font-size: 18px;
+  line-height: 0.2rem;
+  padding-top: 3px;
+  transition: color 0.15s ease-in-out;
+}
+
+/** Followers sec end **/
+
+/**Tweet Trend start **/
+.any-side {
+  margin-top: 10px;
+}
+
+.Tweet-trend {
+  padding: 20px 10px;
+}
+
+.Tweet-trend div:first-child {
+  display: flex;
+}
+
+.Tweet-trend > div > h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 18px;
+}
+
+.Tweet-trend > * a {
+  color: var(--primary-red-color);
+  text-decoration: none;
+}
+
+.Tweet-trend > * a:hover {
+  text-decoration: underline;
+}
+
+.trend-link {
+  padding: 5px;
+}
+
+.trend-link > a {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.trend-link > p {
+  margin-block: 0;
+  line-height: 17px;
+  font-size: 12px;
+  color: var(--small-ash-color);
+}
+/** Tweet Trend End **/
+
+/** Tweet follow **/
+.tweet-follow {
+  display: flex;
+  margin-top: 10px;
+  padding: 5px 0;
+  justify-content: space-between;
+}
+
+.tweet-follow div:last-child {
+  color: #d9c8c8;
+  font-size: 12px;
+}
+
+.tweet-follow img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.main-follow {
+  font-size: 15px;
+}
+
+.main-follow p {
+  margin-block: 0px;
+  font-weight: bold;
+  padding-right: 2px;
+}
+
+.main-follow span {
+  color: var(--small-ash-color);
+  cursor: pointer;
+}
+
+.main-follow input[type="button"] {
+  border-radius: 100px;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  border: 1px solid var(--primary-red-color);
+  color: var(--primary-red-color);
+  background: transparent;
+}
+
+.main-follow input[type="button"]:hover {
+  background: #f5b1c3c9;
+  color: white;
+}
+
+.tweet-follow-side {
+  border-top: 1px solid #d9c8c8;
+  font-size: 13px;
+  color: var(--primary-red-color);
+}
+
+.tweet-follow-side > * a {
+  color: var(--primary-red-color);
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+.tweet-follow-side > * a:hover {
+  text-decoration: underline;
+}
+
+.tweet-follow-side p {
+  padding: 0 10px 10px 10px;
+}
+
+.tweet-footer div:first-child {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--primary-ash-color);
+  padding: 10px;
+  background: white;
+}
+.tweet-footer div:first-child > * {
+  text-align: left;
+}
+.tweet-footer > * a {
+  text-decoration: none;
+  color: var(--primary-ash-color);
+  padding: 3px;
+}
+
+.tweet-footer > * a:hover {
+  text-decoration: underline;
+  color: var(--primary-red-color);
+}
+/** End Tweet follow **/
+
+.top-tweet {
+  display: flex;
+  background-color: #fce8ed !important;
+  padding: 20px;
+}
+
+.top-tweet img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.top-tweet input[type="text"] {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #ffbcbc;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: red;
+  display: block;
+  font-size: 13px;
+  height: 32px;
+  line-height: 16px;
+  padding: 20px 20px 20px 12px;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+.new-tweet {
+  background-color: #f5f8fa !important;
+  border-bottom: 1px solid #e6ecf0;
+  border-top: 1px solid #e6ecf0;
+  border: 1px solid #f5f8fa;
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  color: var(--primary-red-color);
+  cursor: pointer;
+  user-select: none;
+}
+
+.new-tweet:hover {
+  background-color: #e6ecf0 !important;
+  border: 1px solid #e5d9d9;
+}
+
+.new-tweet:focus {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 0 2px #fff, 0 0 2px 4px #e81c4f66;
+}
+
+.tweet-content {
+  padding: 10px;
+  display: flex;
+  cursor: pointer;
+  border-bottom: 1px solid #e5d9d9;
+}
+
+.tweet-content > * img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.tweet-content-head {
+  padding: 0 0 0 5px;
+}
+
+.tweet-content-head > div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweet-content-head > div:first-child p {
+  display: inline-block;
+  padding-right: 2px;
+  margin-block: 0;
+}
+
+.tweet-content-head > div:first-child i {
+  color: #657786;
+  font-size: 12px;
+}
+
+.tweet-content-head > div:nth-child(2) > p {
+  margin-block: 0;
+  font-size: 15px;
+  padding: 5px 0 15px 0;
+  margin-block: 0px;
+  line-break: strict;
+}
+
+.tweet-content-head > div:nth-child(2) > a {
+  color: #39c5ed;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.tweet-content-head > div:nth-child(2) > a:hover {
+  text-decoration: underline;
+}
+
+.bg-title {
+  font-weight: bold;
+  font-size: 15px;
+  margin-block: 0;
+}
+
+.bg-lower-title {
+  font-size: 14px;
+  color: #657786;
+  margin-block: 0;
+}
+
+.tweet-link > a {
+  color: #657786;
+  text-decoration: none;
+  padding-right: 20px;
+}
+
+.tweet-link > a:hover {
+  color: var(--primary-red-color);
+}
